@@ -1,0 +1,51 @@
+.meinflie{
+  height:100vh;
+  background-image: url("https://sozai-good.com/uploads/83159/83159_sample.png") ;
+  background-size: cover;
+}
+.header{
+  width:100%;
+  height:60px;
+  background-color:lightsalmon;
+  text-align:center;
+  font-size:30px;
+  position: relative;
+  color:black;
+  line-height:60px;
+  &__sign_in{
+    weight:50px;
+    color:red;
+    font-size:15px;
+    position: absolute;
+    right:100px;
+    top:0;
+    
+  }
+  &__sign_create{
+    weight:50px;
+    color:white;
+    font-size:15px;
+    position: absolute;
+    right:0;
+    top:0;
+  }
+  &__log_out{
+    weight:50px;
+    color:white;
+    font-size:15px;
+    position: absolute;
+    left:0;
+    top:0;
+  }
+  &__user-name{
+    font-size:15px;
+    top:0;
+    color:black;
+    right:200px;
+    weight:50px;
+    position: absolute;
+  }
+  
+
+
+}

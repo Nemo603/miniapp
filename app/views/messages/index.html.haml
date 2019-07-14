@@ -1,0 +1,35 @@
+.meinflie
+  .header
+    miniAPP
+    .header__sign_in
+      = link_to user_session_path,class: "bit" do
+        サインイン  
+    .header__sign_create
+      = link_to new_user_registration_path ,class: "bit" do
+        新規登録
+    .header__log_out
+      = link_to destroy_user_session_path, method: :delete,class: "bit" do
+        ログアウト
+    .header__user-name
+      ユーザー名：
+      = current_user.try!(:name) 
+
+
+  .text-box
+    -# = simple_format(message.text)
+    %span
+      .name
+      = current_user.try!(:name)
+      %span
+      投稿者: 
+      = current_user.try!(:name) 
+      .text
+      = render @message
+
+  .testfile
+    -# = @messages.each_with_index do |message|
+    = render @message
+
+  .form
+  = render partial: "form"
+
